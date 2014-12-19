@@ -1,0 +1,15 @@
+li {
+    list-style-type: none;
+}
+.add-item-section{}
+.to-buy-section{
+input[type="checkbox"]checked : true;
+}
+
+.purchased-section
+{
+  /*input:checkbox:checked; */
+  /*:input[type="checkbox"]:checked;*/
+  /*input[type="checkbox"]:checked = 'checked';*/
+  input[type="checkbox"]checked : false;
+}
