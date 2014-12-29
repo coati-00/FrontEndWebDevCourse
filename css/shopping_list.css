@@ -1,9 +1,32 @@
+body {
+    color: #660033;
+    background-color: #CC33CC;
+    font-family: 'Lobster', cursive;
+}
+
+/* Want everything to be in the center of the page */
+.masthead-heading, .add-item-section, .purchased-section, .to-buy-section { text-align: center; }
+
+.list-one, .list-two {
+    /* display:block; */
+    margin-right: 15em;
+    margin-left: 15em;
+    background-color: #FF33FF;
+    border-radius: 10px;
+}
+form > input {background-color: #FF33FF;}
 li {
     list-style-type: none;
+    text-align: left;
+    /* margin: 25em; */
+    /* border: 25em; */
 }
+
+ul {padding: 1em;}
+
 .add-item-section{}
 .to-buy-section{
-input[type="checkbox"].checked : true;
+  input[type="checkbox"].checked : true;
 }
 
 .purchased-section
