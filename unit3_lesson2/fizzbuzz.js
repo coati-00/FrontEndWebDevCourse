@@ -7,17 +7,31 @@ $(document).ready(function() {
   */
 
   /* Prompt user to enter a number */
-  var usr_num = prompt("Please enter a number for fizzbuzz");
-  fizzbuzz(usr_num);
+  var ask_user = true;
+  while(ask_user){
+    var usr_num = prompt("Please enter a number for fizzbuzz");
+    console.log(usr_num);
+    //console.log(parseInt(usr_num));
+    if((parseInt(usr_num) != undefined) && (parseInt(usr_num) != NaN))
+    {
+      fizzbuzz(parseInt(usr_num));
+      ask_user=false;
+    }
+    else
+    {
+      var usr_num = prompt("Please enter a valid positive integer fizzbuzz");
+    }
+  }
+  
 
 });
+
 
 /* Create function to do the fizzbuzz thing until the number the user entered is reached */
 function fizzbuzz(num)
 {
-    var y = parseInt(num);
-
-    for (var x = 0; x <= y; x++)
+    
+    for (var x = 0; x <= num; x++)
     { 
       if ((x%5 == 0) && (x%3 == 0)) 
       {  
