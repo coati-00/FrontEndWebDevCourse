@@ -1,15 +1,20 @@
 $(document).ready(function(){
-	
-        /* Start new game */
-        $(".new").on('click', function(){
-            //console.log("Inside a new game");
-    	    //$(".overlay").fadeIn(1000);
-            var new_game = newGame();
-            console.log("new_game.secretNumber");
-            console.log(new_game.secretNumber);
-            console.log("New game is : ");
-            console.log(new_game);
-  	});
+    /* When the page loads, JavaScript should start a new game, new games created via named function. */
+    var new_game = newGame();
+    
+    
+    
+    /* Do user function to take user input and provide feedback */
+    /* User feed back based on how close they are to the number in ranges */
+    /* Add user guesses to the guess list */
+    /* Validate user input is a number between 1 and 100 */
+
+    /* Start new game when user clicks on 'new game' button */
+    $(".new").on('click', function(){
+        //console.log("Inside a new game");
+        //var new_game = newGame();
+        new_game = newGame();  // this this is redefining var above need to double check scope
+    });
 
 	/*--- Display information modal box ---*/
   	$(".what").click(function(){
@@ -24,44 +29,23 @@ $(document).ready(function(){
 
 });
 
+/* New games should be created via new game function */
 function newGame()
 {
-    //console.log("This is a new game...");
-    var secret_number2 = secretNumber2();
-    //console.log("The secret number is : ");
-    
-    console.log("secretNumber2()");
-    console.log(secret_number2);
-
-
-    this.secretNumber = function() {
-        var new_secret_number = Math.floor((Math.random() * 100) + 1);
-        return new_secret_number;
-        //return Math.floor((Math.random() * 100) + 1);//message; // spit out the message
-    }
-    console.log(this.secretNumber);
-
-    function otherSecretNumber() {
-        //var new_secret_number = Math.floor((Math.random() * 100) + 1);
-        //return new_secret_number;
-        return Math.floor((Math.random() * 100) + 1);//message; // spit out the message
-    }
-
-    console.log("otherSecretNumber()");
-    console.log(otherSecretNumber());
-
-    var otherNumber = otherSecretNumber();
-
-    console.log("otherNumber");
-    console.log(otherNumber);
+    console.log("This is a new game...");
+    var secret_number = secretNumber();
+    console.log("The secret number is : ");
+    console.log("secretNumber()");
+    console.log(secret_number);
 
     return this;
 }
 
-//function secretNumber()
-//{
-//    var new_secret_number = Math.floor((Math.random() * 100) + 1);
-//    return new_secret_number;
-    //return Math.floor((Math.random() * 100) + 1);
-//}
+/* Do function to create random number between 1 and 100 - named function */
+function secretNumber()
+{
+    //var new_secret_number = Math.floor((Math.random() * 100) + 1);
+    //return new_secret_number;
+    return Math.floor((Math.random() * 100) + 1);
+}
 
