@@ -8,11 +8,11 @@ $(document).ready(function() {
 
   /* Prompt user to enter a number */
   var ask_user = true;
-  while(ask_user){
+  while(ask_user)
+  {
     var usr_num = prompt("Please enter a number for fizzbuzz");
-    console.log(usr_num);
-    //console.log(parseInt(usr_num));
-    if((parseInt(usr_num) != undefined) && (parseInt(usr_num) != NaN))
+
+    if(!isNaN(parseInt(usr_num)))
     {
       fizzbuzz(parseInt(usr_num));
       ask_user=false;

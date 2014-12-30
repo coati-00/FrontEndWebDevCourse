@@ -9,11 +9,20 @@ body {
 
 .list-one, .list-two {
     /* display:block; */
-    margin-right: 15em;
-    margin-left: 15em;
+    /* font-size: 1.5em; */
+    width: 60em;
+    margin-right: 10em;
+    margin-left: 10em;
     background-color: #FF33FF;
-    border-radius: 10px;
+    border-radius: 2em;/* 10px;*/
 }
+
+.list-two > ul > li {
+    text-decoration: line-through;
+    /*input[type="checkbox"]:checked;*/
+    /*input: checked;*/
+}
+
 form > input {background-color: #FF33FF;}
 li {
     list-style-type: none;
