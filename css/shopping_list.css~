@@ -10,7 +10,7 @@ body {
 .list-one, .list-two {
     margin-left: auto;
     margin-right: auto;
-    /* position: relative;*/
+    position: relative;
     width: 60em;
     background-color: #FF33FF;
     border-radius: 2em;/* 10px;*/

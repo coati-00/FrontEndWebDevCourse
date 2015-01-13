@@ -2,10 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<script src="../js/jquery-1.11.2.js"></script>
+<script src="../js/shopping_list.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="../css/shopping_list.css">
-<script language="javascript" type="text/javascript" src="../js/jquery-11.1.2.js"></script>
-<script language="javascript" type="text/javascript" src="../js/shopping_list.js"></script>
 <title>Shopping List</title>
 </head>
 
@@ -16,8 +16,10 @@
 
 <section class="add-item-section">
   <form>
+    <span id='item-entry'>
     <label>Item:</label>
     <input type="text" max-length=18 />
+    </span>
     <!-- required />
     <select>
       <option value ="0" selected>-------</option>
