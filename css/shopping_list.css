@@ -8,11 +8,10 @@ body {
 .masthead-heading, .add-item-section, .purchased-section, .to-buy-section { text-align: center; }
 
 .list-one, .list-two {
-    /* display:block; */
-    /* font-size: 1.5em; */
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
     width: 60em;
-    margin-right: 10em;
-    margin-left: 10em;
     background-color: #FF33FF;
     border-radius: 2em;/* 10px;*/
 }
