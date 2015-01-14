@@ -36,8 +36,6 @@ function newGame()
         var user_guess = $("form #userGuess").val();
 
         if (isValid(user_guess)) {
-            console.log("inside is valid");
-            alert (user_guess);
             userNumber($("form #userGuess").val(), secret_number);
             /* If guess is valid increment counter and add user guess to the bottom of the page */
             start_count = start_count + 1;
@@ -121,7 +119,7 @@ function isValid(user_guess)
     /* Validate user input is a number between 1 and 100 */
     if (isNaN(parseInt(user_guess)))
     {
-        alert( String(user_guess)  + "Is not a valid number between 1 an 100 - try again.");
+        alert(String(user_guess) + " Is not a valid number between 1 an 100 - try again.");
         return false;
     }
     else if (0 > parseInt(user_guess) || 100 < parseInt(user_guess))
