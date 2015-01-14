@@ -11,7 +11,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    width: 60em;
+    /* width: 60em; */
     background-color: #FF33FF;
     border-radius: 2em;/* 10px;*/
 }
@@ -39,10 +39,12 @@ ul {padding: 1em;}
 {
   input[type="checkbox"]checked : false;
 }
-
+/*.b {color: #660033;}*/
 .close
 {
     position: relative;
+    text-align: left;
+    color: #660033;
     align-content: flex-end;
     /*left: 50em;*/
     /* self-align: flex-end; */ /* trying to put on right side - positions to left of container but not sure how big li container is...*/

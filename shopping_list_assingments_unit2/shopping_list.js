@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  //when user wishes to add and item to the todo list...
+  // Add Item: when user wishes to add and item to the todo list...
   $('.add-item-section input[type=text]').on('keydown',   function(event)
   {
      if ( event.which === 13 ) 
@@ -19,17 +19,32 @@ $(document).ready(function () {
      }
   });
 
-  /* When user checks the checkbox item is done - move item to the bottom list, keep checkbox checked and draw line through item */
+  /* Check Item: When user checks the checkbox item is done - move item to the bottom list, keep checkbox checked and draw line through item */
   $('.to-buy-section ul').on('click', 'li input[type=checkbox]', function(event){
     $('.purchased-section ul').append($(this).parent());
     $('.to-buy-section ul').remove($(this).parent());
   });
   
-  /* If user decides that they want to uncheck and add back to the to-buy list */
-    $('.purchased-section').on('click', 'li input[type=checkbox]', function(event){
-        alert("unchecked");
+  /* Uncheck Item: If user decides that they want to uncheck and add back to the to-buy list */
+  $('.purchased-section').on('click', 'li input[type=checkbox]', function(event){
     $('.to-buy-section ul').append($(this).parent());
     $('.purchased-section ul').remove($(this).parent());
   });
+
+  /* Remove Item: User wishes to remove the item from the list completely - could be in either list */
+
+  $('ul').on('click', 'li span.close', function(event){
+    alert($(event.target).parent());//.nodeName);
+    $('ul').remove($(event.target).parent());
+    //$('div ul').remove($(this));//.parent());    
+  });
+
+  //$('section .close').on('click', 'b', function(event){
+    //alert(".close");
+    //alert($('section .close b')[0]);
+    //alert($(this).parent().parent().text());
+    //$('section .close b').remove($(this).parent().parent());
+    //$('section').remove($(this).parent().parent());
+  //});
 
 });
