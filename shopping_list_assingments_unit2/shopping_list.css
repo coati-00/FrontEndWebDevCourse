@@ -18,8 +18,6 @@ body {
 
 .list-two > ul > li {
     text-decoration: line-through;
-    /*input[type="checkbox"]:checked;*/
-    /*input: checked;*/
 }
 
 form > span > input {background-color: #FF33FF;}
@@ -39,8 +37,13 @@ ul {padding: 1em;}
 
 .purchased-section
 {
-  /*input:checkbox:checked; */
-  /*:input[type="checkbox"]:checked;*/
-  /*input[type="checkbox"]:checked = 'checked';*/
   input[type="checkbox"]checked : false;
+}
+
+.close
+{
+    position: relative;
+    align-content: flex-end;
+    /*left: 50em;*/
+    /* self-align: flex-end; */ /* trying to put on right side - positions to left of container but not sure how big li container is...*/
 }

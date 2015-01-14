@@ -22,7 +22,7 @@ body {
     /*input: checked;*/
 }
 
-form > input {background-color: #FF33FF;}
+form > span > input {background-color: #FF33FF;}
 li {
     list-style-type: none;
     text-align: left;
